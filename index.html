@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <main>
+        <div id="card">
+            <h1>Dynamic Resume Builder</h1>
+            <div style="width: full; display: flex; justify-content: center;">
+                <button style="padding: 10px; border-radius:20px; border: none; outline: none; margin-top: 10px; font-size: 18px; cursor: pointer; display: none;" id="editBtn">click to edit</button>
+            </div>
+            <form action="">
+                <input type="text" name="" id="name" placeholder="Enter Your Name" required spellcheck="false">
+                <input type="email" id="email" placeholder="Enter Your Email" required spellcheck="false">
+                <input type="number" id="number" placeholder="Enter Your Number" required>
+                <input type="text" id="edu" placeholder="Enter Your Education" spellcheck="false">
+                <textarea name="" id="work" placeholder="Work Experience" spellcheck="false"></textarea>
+                <textarea name="" id="skills" placeholder="Skills Seperate With Comma ','" spellcheck="false"></textarea>
+
+                <button onsubmit="handleSubmit" id="subtn">Generate</button>
+            </form>
+            
+            <div id="result">
+                <h2 id="showname"></h2>
+                <h2 id="showemail"></h2>
+                <h2 id="shownumber"></h2>
+                <h2 id="showedu"></h2>
+                <h2 id="showork"></h2>
+                <h2>SKILLS:</h2>
+                <div id="showskills"></div>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  background-color: slategray;
+}
+
+#card {
+  width: fit-content;
+  height: fit-content;
+  margin-top: 100px;
+  border: 0.5px solid black;
+  border-radius: 30px;
+  overflow: hidden;
+  padding: 10px;
+  box-shadow: 1px 1px black;
+}
+
+#card h1 {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 45px;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  /* display: none; */
+}
+
+form input {
+  width: 80%;
+  margin: 10px 0;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: aliceblue;
+}
+form textarea {
+  width: 80%;
+  margin: 10px 0;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: aliceblue;
+  resize: none;
+}
+
+form button {
+  font-size: 20px;
+  margin-top: 30px;
+  padding: 20px;
+  outline: none;
+  border: none;
+  border-radius: 30px;
+}
+
+#result {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 50px;
+  gap: 20px;
+  flex-wrap: wrap;
+  display: none;
+}
+
+#result h2 {
+  font-size: 28px;
+}
+
+.setSkills {
+  font-size: 20px;
+  border: 1px solid black;
+  border-radius: 30px;
+  padding: 10px 20px;
+}
+
+#showskills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
